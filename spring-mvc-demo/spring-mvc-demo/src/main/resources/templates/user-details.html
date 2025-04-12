@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7fb;
+            color: #2f2f2f;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .header {
+            width: 100%;
+            background-color: #0056b3;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+	.all-users-button {
+            cursor: pointer;
+            text-decoration: none;
+            padding: 10px 12px;
+            background-color: #ffffff;
+            color: #0056b3;
+            border-radius: 10px;
+            position: fixed;
+            right: 40px;
+            top: 12px;
+            margin-left: auto;
+            border: 2px solid #0056b3;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .all-users-button:hover {
+            background-color: #32bbff;
+            color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .profile-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #0056b3;
+        }
+
+        .details-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .details-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .details-card h2 {
+            font-size: 20px;
+            color: #0056b3;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .details-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+        }
+
+        .transaction-table {
+            width: 80%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .transaction-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .transaction-table thead {
+            background-color: #0056b3;
+            color: #fff;
+            text-align: left;
+        }
+
+        .transaction-table th, .transaction-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .transaction-table tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        .transaction-table tbody tr:hover {
+            background-color: #e8f4ff;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+    <title>Financial Profile</title>
+</head>
+<body>
+<div class="header">Financial Profile Dashboard</div>
+<a th:href="@{/users}" class="all-users-button">Users</a>
+
+<div class="main-container">
+    <div class="profile-section">
+        <img th:src="${user.getProfilePictureUrl()}"
+             alt="Profile Picture" class="profile-avatar">
+        <h1 th:text="${user.username}">Username</h1>
+    </div>
+
+    <div class="details-container">
+        <div class="details-card">
+            <h2>Personal Information</h2>
+            <div class="details-item"><span>Name:</span><span th:text="${user.firstName}"></span></div>
+            <div class="details-item"><span>Country:</span><span th:text="${user.country}"></span></div>
+        </div>
+
+        <div class="details-card">
+            <h2>Payment Details</h2>
+            <div class="details-item"><span>Amount:</span><span th:text="${user.balance}"></span></div>
+        </div>
+
+        <div class="details-card">
+            <h2>Contact Information</h2>
+            <div class="details-item"><span>Phone:</span><span th:text="${user.phoneNumber}"></span></div>
+            <div class="details-item"><span>Address:</span><span th:text="${user.address}"></span></div>
+        </div>
+    </div>
+
+    <div class="transaction-table">
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Amount</th>
+                <th>Type</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="transaction : ${user.transactions}">
+                <td th:text="${transaction.id}"></td>
+                <td th:text="${transaction.amount}"></td>
+                <td th:text="${transaction.type}"></td>
+                <td th:text="${transaction.createdOn}"></td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">&copy; 2025 Financial Dashboard. All rights reserved.</div>
+</div>
+</body>
+</html>

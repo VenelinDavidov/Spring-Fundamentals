@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7fb;
+            color: #2f2f2f;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .header {
+            width: 100%;
+            background-color: #0056b3;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .styled-table {
+            width: 80%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .styled-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .styled-table thead {
+            background-color: #0056b3;
+            color: #fff;
+            text-align: left;
+        }
+
+        .styled-table th, .styled-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .styled-table tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        .styled-table tbody tr:hover {
+            background-color: #e8f4ff;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+<div class="header">User List</div>
+
+<div class="main-container">
+    <div class="styled-table">
+        <table>
+            <thead>
+            <tr>
+                <th>User</th>
+                <th>First Name</th>
+                <th>Phone</th>
+                <th>Country</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="user : ${users}">
+                <td>
+                    <div class="user-info">
+                        <!--    th:href="@{link}"  link = '/users/' + ${user.id}-->
+                        <a th:href="@{'/users/' + ${user.id}}">
+                            <img th:src="${user.profilePictureUrl}" alt="Avatar" class="user-avatar">
+                        </a>
+                        <span th:text="${user.username}"></span>
+                    </div>
+                </td>
+                <td th:text="${user.firstName}"></td>
+                <td th:text="${user.phoneNumber}"></td>
+                <td th:text="${user.country}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">&copy; 2025 Financial Dashboard. All rights reserved.</div>
+</div>
+</body>
+</html>
