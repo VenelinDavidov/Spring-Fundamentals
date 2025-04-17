@@ -54,12 +54,17 @@ public class IndexController {
         return modelAndView;
     }
 
+
+
+
     @PostMapping("/register")
     public ModelAndView registerNewUser (RegisterRequest registerRequest){
 
 
         return null;
     }
+
+
 
 
     //Home
