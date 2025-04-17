@@ -1,5 +1,5 @@
 package app.subscription.model;
 
 public enum SubscriptionStatus {
-    ACTIVE, COMPLETED, TERMINATED;
+    ACTIVE, COMPLETED, TERMINATED
 }

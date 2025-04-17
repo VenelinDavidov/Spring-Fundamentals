@@ -39,8 +39,6 @@ public class WalletService {
     }
 
 
-
-
     public void createNewWallet(User user) {
 
         Wallet wallet = walletRepository.save (initializeNewWallet (user));
@@ -52,54 +50,59 @@ public class WalletService {
 
 
 
-   //Method change
-   @Transactional
-   public Transaction topUp(UUID walletId, BigDecimal amount ){
 
-       Wallet wallet = getWalletById(walletId);
+    //Method change
+    @Transactional
+    public Transaction topUp(UUID walletId, BigDecimal amount) {
 
-       if (wallet.getStatus () == WalletStatus.INACTIVE){
+        Wallet wallet = getWalletById (walletId);
 
-           return transactionService.createNewTransaction (
-                   wallet.getOwner (),
-                   SMART_WALLET_LTD,
-                   walletId.toString (),
-                   amount,
-                   wallet.getBalance (),
-                   wallet.getCurrency (),
-                   TransactionType.DEPOSIT,
-                   TransactionStatus.FAILED,
-                   "Top Up %.2f".formatted (amount.doubleValue ()),
-                   "Inactive wallet");
-       }
 
-       wallet.setBalance(wallet.getBalance ().add (amount));
-       wallet.setUpdatedOn(LocalDateTime.now());
+        if (wallet.getStatus () == WalletStatus.INACTIVE) {
 
-       walletRepository.save(wallet);
+            return transactionService.createNewTransaction (
+                    wallet.getOwner (),
+                    SMART_WALLET_LTD,
+                    walletId.toString (),
+                    amount,
+                    wallet.getBalance (),
+                    wallet.getCurrency (),
+                    TransactionType.DEPOSIT,
+                    TransactionStatus.FAILED,
+                    "Top Up %.2f".formatted (amount.doubleValue ()),
+                    "Inactive wallet");
+        }
 
-       return transactionService.createNewTransaction(
+        wallet.setBalance (wallet.getBalance ().add (amount));
+        //  wallet.setCreatedOn (LocalDateTime.now());
+        wallet.setUpdatedOn (LocalDateTime.now ());
+
+        walletRepository.save (wallet);
+
+
+        return transactionService.createNewTransaction (
                 wallet.getOwner (),
                 SMART_WALLET_LTD,
-                walletId.toString (),
+                wallet.getId ().toString (),
                 amount,
                 wallet.getBalance (),
-                wallet.getCurrency(),
+                wallet.getCurrency (),
                 TransactionType.DEPOSIT,
                 TransactionStatus.SUCCEEDED,
                 "Top Up %.2f".formatted (amount.doubleValue ()),
                 null);
-   }
+    }
 
 
 
 
 
     private Wallet getWalletById(UUID walletId) {
-        return  walletRepository.findById (walletId)
+        return walletRepository.findById (walletId)
                 .orElseThrow (() -> new DomainException ("Wallet with id [%s] does not exist."
-                .formatted (walletId), HttpStatus.BAD_REQUEST));
+                        .formatted (walletId), HttpStatus.BAD_REQUEST));
     }
+
 
 
 
@@ -116,10 +119,6 @@ public class WalletService {
                 .updatedOn (LocalDateTime.now ())
                 .build ();
     }
-
-
-
-
 
 
 }

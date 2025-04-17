@@ -16,7 +16,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 @Service
 @Slf4j
@@ -26,8 +28,6 @@ public class UserService {
     private final PasswordEncoder passwordEncoder;
     private final SubscriptionService subscriptionService;
     private final WalletService walletService;
-
-
 
 
     //Constructor
@@ -42,26 +42,25 @@ public class UserService {
         this.walletService = walletService;
     }
 
-   // Method for Login
-    public User login (LoginRequest loginRequest){
+    // Method for Login
+    public User login(LoginRequest loginRequest) {
 
         Optional <User> optionalUser = userRepository.findByUsername (loginRequest.getUsername ());
         if (optionalUser.isEmpty ()) {
 
-            throw new DomainException("User with username=[%s] or password [%s] are incorrect."
-                    .formatted(loginRequest.getUsername(), loginRequest.getPassword ()), HttpStatus.BAD_REQUEST);
+            throw new DomainException ("User with username=[%s] or password [%s] are incorrect."
+                    .formatted (loginRequest.getUsername (), loginRequest.getPassword ()), HttpStatus.BAD_REQUEST);
         }
 
         User user = optionalUser.get ();
 
-        if (!passwordEncoder.matches (loginRequest.getPassword (), user.getPassword ())){
+        if (!passwordEncoder.matches (loginRequest.getPassword (), user.getPassword ())) {
             throw new DomainException ("User with username=[%s] or password [%s] are incorrect."
-                    .formatted(loginRequest.getUsername(), loginRequest.getPassword ()), HttpStatus.BAD_REQUEST);
+                    .formatted (loginRequest.getUsername (), loginRequest.getPassword ()), HttpStatus.BAD_REQUEST);
         }
 
         return user;
     }
-
 
 
     //Method register
@@ -84,9 +83,6 @@ public class UserService {
     }
 
 
-
-
-
     //create method initialize
     private User initializeNewUserAccount(RegisterRequest dto) {
 
@@ -99,5 +95,19 @@ public class UserService {
                 .createdOn (LocalDateTime.now ())
                 .updatedOn (LocalDateTime.now ())
                 .build ();
+    }
+
+
+    public List <User> getAllUsers() {
+        return userRepository.findAll ();
+    }
+
+
+
+    public User getById(UUID uuid) {
+
+        return userRepository.findById (uuid)
+                .orElseThrow (()-> new DomainException ("User with id [%s] doesn't exist"
+                .formatted (uuid),HttpStatus.BAD_REQUEST));
     }
 }
