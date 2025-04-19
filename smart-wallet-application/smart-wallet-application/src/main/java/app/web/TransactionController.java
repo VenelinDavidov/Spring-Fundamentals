@@ -37,7 +37,7 @@ public class TransactionController {
     @GetMapping
     public ModelAndView getAllTransactions (){
 
-        List <Transaction> transactions = transactionService.getAllByOwnerId (UUID.fromString ("559748e4-acaa-47ea-9456-6ec78e4a02bb"));
+        List <Transaction> transactions = transactionService.getAllByOwnerId (UUID.fromString ("ef95eeb4-0b9c-43fa-89fd-204b37eeb745"));
 
         ModelAndView modelAndView = new ModelAndView ();
         modelAndView.addObject ("transactions", transactions);

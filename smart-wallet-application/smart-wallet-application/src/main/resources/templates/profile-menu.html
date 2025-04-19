@@ -99,7 +99,8 @@
   <div class="home-section">
     <div class="single-section-box profile-menu">
       <div class="profile-header">
-        <img th:src="${#strings.isEmpty(user.getProfilePicture) ? 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTML0gExaohZHdZW3609F12nUmVc14WXYNx_w&s' : user.profilePicture}" alt="Profile Picture" class="profile-avatar">
+        <img th:src="${#strings.isEmpty(user.profilePicture) ? 'https://img.freepik.com/premium-vector/user-circle-with-blue-gradient-circle_78370-4727.jpg?semt=ais_hybrid&w=740' : user.profilePicture}"
+             alt="Profile Picture" class="profile-avatar">
         <h2 th:text="${user.username}" class="profile-name"></h2>
       </div>
 
@@ -140,7 +141,7 @@
   </div>
 </main>
 
-<div class="footer"><p>© 2025 Smart Wallet. All rights reserved.</p></div>
+<th:block th:insert="fragments/footer :: footer"></th:block>/>
 
 </body>
 </html>

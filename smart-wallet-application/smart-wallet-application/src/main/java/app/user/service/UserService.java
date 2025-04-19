@@ -1,10 +1,12 @@
 package app.user.service;
 
 import app.exception.DomainException;
+import app.subscription.model.Subscription;
 import app.subscription.service.SubscriptionService;
 import app.user.model.User;
 import app.user.model.UserRole;
 import app.user.repository.UserRepository;
+import app.wallet.model.Wallet;
 import app.wallet.service.WalletService;
 import app.web.dto.LoginRequest;
 import app.web.dto.RegisterRequest;
@@ -74,16 +76,19 @@ public class UserService {
         Optional <User> optionalUser = userRepository.findByUsername (registerRequest.getUsername ());
 
         if (optionalUser.isPresent ()) {
-            throw new DomainException ("User with username=[%s] already exist.".formatted (registerRequest.getUsername ()), HttpStatus.BAD_REQUEST);
+            throw new DomainException ("User with username=[%s] already exist."
+                    .formatted (registerRequest.getUsername ()), HttpStatus.BAD_REQUEST);
         }
 
         User user = userRepository.save (initializeNewUserAccount (registerRequest));
+
+
         subscriptionService.createDefaultSubscription (user);
         walletService.createNewWallet (user);
 
         log.info ("Successfully created new user for username [%s] with id [%s].".formatted (user.getUsername (), user.getId ()));
 
-        return user;
+        return userRepository.save (user);
     }
 
 
