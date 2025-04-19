@@ -4,40 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15fd0253-7a8d-454b-b7b6-4dd9ba9e88a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="15fd0253-7a8d-454b-b7b6-4dd9ba9e88a2" name="Changes" comment="new updates for wallet app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/user/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/SubscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/SubscriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/TransactionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/WalletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/WalletController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/profile-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/profile-menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/transactions.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/transactions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/subscription/model/Subscription$SubscriptionBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/subscription/model/Subscription$SubscriptionBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/transaction/model/Transaction$TransactionBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/transaction/model/Transaction$TransactionBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/user/model/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/user/model/User$UserBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/user/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/wallet/model/Wallet$WalletBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/wallet/model/Wallet$WalletBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/wallet/service/WalletService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/wallet/service/WalletService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/dto/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/dto/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/web/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/web/SubscriptionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/SubscriptionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/web/TransactionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/TransactionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/web/dto/LoginRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/dto/LoginRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/web/dto/RegisterRequest$RegisterRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/dto/RegisterRequest$RegisterRequestBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/web/dto/RegisterRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/dto/RegisterRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/profile-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/profile-menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/transactions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/transactions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,11 +114,24 @@
       <updated>1736782357672</updated>
       <workItem from="1736782358732" duration="332000" />
       <workItem from="1744905447974" duration="11539000" />
-      <workItem from="1744958971866" duration="15520000" />
+      <workItem from="1744958971866" duration="23298000" />
     </task>
+    <task id="LOCAL-00001" summary="new updates for wallet app">
+      <option name="closed" value="true" />
+      <created>1745054687656</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745054687656</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new updates for wallet app" />
+    <option name="LAST_COMMIT_MESSAGE" value="new updates for wallet app" />
   </component>
 </project>
