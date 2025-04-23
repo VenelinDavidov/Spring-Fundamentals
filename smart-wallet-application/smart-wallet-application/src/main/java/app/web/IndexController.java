@@ -3,6 +3,7 @@ package app.web;
 import app.user.model.Country;
 import app.user.model.User;
 import app.user.service.UserService;
+import app.web.dto.LoginRequest;
 import app.web.dto.RegisterRequest;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,26 +23,33 @@ public class IndexController {
     private final UserService userService;
 
 
-
     @Autowired
     public IndexController(UserService userService) {
         this.userService = userService;
     }
 
 
-
     // Когато не връщаме модел атрибури, ползваме String
-    @GetMapping("/")
-    public String getIndexPage() {
+    @GetMapping("/login")
+    public ModelAndView getLoginPage() {
 
-        return "index";
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("login");
+        modelAndView.addObject("loginRequest", new LoginRequest());
+
+        return modelAndView;
     }
 
-    //Login
-    @GetMapping("/login")
-    public String getLoginPage() {
 
-        return "login";
+    @PostMapping("/login")
+    public String login(@Valid LoginRequest loginRequest, BindingResult bindingResult) {
+
+        if (bindingResult.hasErrors()) {
+            return "login";
+        }
+        userService.login(loginRequest);
+
+        return "redirect:/home";
     }
 
 
@@ -58,19 +66,16 @@ public class IndexController {
     }
 
 
-
-
     @PostMapping("/register")
     public ModelAndView registerNewUser (@Valid RegisterRequest registerRequest, BindingResult bindingResult) {
 
         if (bindingResult.hasErrors()) {
-             return new ModelAndView("register");
+            return new ModelAndView("register");
         }
         userService.register(registerRequest);
 
         return new ModelAndView("redirect:/home");
     }
-
 
 
 
@@ -80,7 +85,7 @@ public class IndexController {
 
         ModelAndView modelAndView = new ModelAndView ();
 
-        User user = userService.getById (UUID.fromString ("ef95eeb4-0b9c-43fa-89fd-204b37eeb745"));
+        User user = userService.getById (UUID.fromString ("559748e4-acaa-47ea-9456-6ec78e4a02bb"));
         modelAndView.addObject ("user", user);
         modelAndView.setViewName ("home");
 

@@ -9,7 +9,9 @@ import app.user.model.User;
 import app.wallet.model.Wallet;
 import app.wallet.model.WalletStatus;
 import app.wallet.repository.WalletRepository;
+import app.web.dto.TransferRequest;
 import jakarta.transaction.Transactional;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,6 +20,7 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Currency;
+import java.util.Optional;
 import java.util.UUID;
 
 @Slf4j
@@ -74,7 +77,6 @@ public class WalletService {
         }
 
         wallet.setBalance (wallet.getBalance ().add (amount));
-        //  wallet.setCreatedOn (LocalDateTime.now());
         wallet.setUpdatedOn (LocalDateTime.now ());
 
         walletRepository.save (wallet);
@@ -92,6 +94,131 @@ public class WalletService {
                 "Top Up %.2f".formatted (amount.doubleValue ()),
                 null);
     }
+
+
+
+   // Transfer Funds
+    public Transaction transferFunds (User sender,  TransferRequest transferRequest){
+
+        Wallet senderWallet = getWalletById (transferRequest.getFromWalledId ());
+
+        Optional <Wallet> receiverWalletOptional = walletRepository.findAllByOwnerUsername (transferRequest.getToUsername ())
+                .stream ()
+                .filter (w -> w.getStatus () == WalletStatus.ACTIVE)
+                .findFirst ();
+
+        String transferDescription = "Transfer from %s to %s, for %.2f".formatted (sender.getUsername (), transferRequest.getToUsername (), transferRequest.getAmount ());
+
+
+        if (receiverWalletOptional.isEmpty ()){
+
+            return transactionService.createNewTransaction (
+                    sender,
+                    senderWallet.getId ().toString (),
+                    transferRequest.getToUsername (),
+                    transferRequest.getAmount (),
+                    senderWallet.getBalance (),
+                    senderWallet.getCurrency (),
+                    TransactionType.WITHDRAWAL,
+                    TransactionStatus.FAILED,
+                    transferDescription,
+                    "Invalid criteria transfer!"
+            );
+        }
+
+        Transaction withdrawal = charge (sender, senderWallet.getId (), transferRequest.getAmount (), transferDescription);
+
+        if (withdrawal.getStatus () == TransactionStatus.FAILED){
+            return withdrawal;
+        }
+
+        Wallet receiverWallet = receiverWalletOptional.get ();
+        receiverWallet.setBalance (receiverWallet.getBalance ().add (transferRequest.getAmount ()));
+        receiverWallet.setUpdatedOn (LocalDateTime.now ());
+
+        walletRepository.save (receiverWallet);
+
+        transactionService.createNewTransaction (receiverWallet.getOwner (),
+                senderWallet.getId ().toString (),
+                receiverWallet.getId ().toString (),
+                transferRequest.getAmount (),
+                receiverWallet.getBalance (),
+                receiverWallet.getCurrency (),
+                TransactionType.DEPOSIT,
+                TransactionStatus.SUCCEEDED,
+                transferDescription,
+                null);
+
+        return withdrawal;
+    }
+
+
+
+
+    //Charge method for transaction
+    @Transactional
+    public Transaction charge (User user, UUID walletId, BigDecimal amount, String description){
+
+        Wallet wallet = getWalletById (walletId);
+
+        //Когато статуса ни е Inactive връщаме една транзакция и не променяме баланса на wallet!!!!
+        //Validate Wallet
+        String failureReason = null;
+        boolean isFailedTransaction = false;
+
+        if (wallet.getStatus () == WalletStatus.INACTIVE){
+
+            isFailedTransaction = true;
+            failureReason = "Inactive wallet status!";
+
+        }
+        // Когато Balance ни е < Amount не променяме баланса на wallet!!!!
+        //Validate Balance
+        if (wallet.getBalance ().compareTo (amount) < 0){
+
+            isFailedTransaction = true;
+            failureReason = "Insufficient funds!";
+        }
+
+        // It's a True!!!
+        if (isFailedTransaction){
+            return transactionService.createNewTransaction (
+                    user,
+                    wallet.getId ().toString (),
+                    SMART_WALLET_LTD,
+                    amount,
+                    wallet.getBalance (),
+                    wallet.getCurrency (),
+                    TransactionType.WITHDRAWAL,
+                    TransactionStatus.FAILED,
+                    description,
+                    failureReason
+            );
+        }
+
+        //Връщаме успешното плащане -Charge
+        //Deduct the amount and create the transaction record
+        BigDecimal newBalance = wallet.getBalance().subtract(amount);
+        wallet.setBalance (newBalance);
+        wallet.setUpdatedOn (LocalDateTime.now ());
+
+        walletRepository.save (wallet);
+
+        //Return transaction
+        return transactionService.createNewTransaction (
+                user,
+                wallet.getId ().toString (),
+                SMART_WALLET_LTD,
+                amount,
+                newBalance,
+                wallet.getCurrency (),
+                TransactionType.WITHDRAWAL,
+                TransactionStatus.SUCCEEDED,
+                description,
+                null
+        );
+    }
+
 
 
 

@@ -1,3 +1,4 @@
+
 package app.user.service;
 
 import app.exception.DomainException;
@@ -10,6 +11,7 @@ import app.wallet.model.Wallet;
 import app.wallet.service.WalletService;
 import app.web.dto.LoginRequest;
 import app.web.dto.RegisterRequest;
+import app.web.dto.UserEditRequest;
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -91,6 +93,19 @@ public class UserService {
         return userRepository.save (user);
     }
 
+
+    public void editUserDetails(UUID userId, UserEditRequest userEditRequest) {
+
+        User user = getById(userId);
+
+        user.setFirstName(userEditRequest.getFirstName());
+        user.setLastName(userEditRequest.getLastName());
+        user.setEmail(userEditRequest.getEmail());
+        user.setProfilePicture(userEditRequest.getProfilePicture());
+
+        userRepository.save(user);
+
+    }
 
 
 

@@ -115,19 +115,19 @@
         </div>
       </div>
 
-      <form class="form">
+      <form class="form" th:action="@{'/users/'+ ${user.id} + '/profile'}"  th:method="PUT" th:object="${userEditRequest}">
 
         <label for="firstName">First Name</label>
-        <input type="text" id="firstName" placeholder="First Name">
+        <input type="text" id="firstName" placeholder="First Name" th:field="*{firstName}">
 
         <label for="lastName">Last Name</label>
-        <input type="text" id="lastName" placeholder="Last Name">
+        <input type="text" id="lastName" placeholder="Last Name" th:field="*{lastName}">
 
         <label for="email">Email</label>
-        <input type="text" id="email" placeholder="Email Address">
+        <input type="text" id="email" placeholder="Email Address" th:field="*{email}">
 
         <label for="profilePicture">Profile Picture URL</label>
-        <input type="text" id="profilePicture" placeholder="Image Link">
+        <input type="text" id="profilePicture" placeholder="Image Link" th:field="*{profilePicture}">
 
         <button class="profile-actions-button">
           <p>Save</p>
