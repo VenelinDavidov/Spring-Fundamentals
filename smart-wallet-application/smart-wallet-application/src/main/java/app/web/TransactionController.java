@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -37,7 +38,7 @@ public class TransactionController {
     @GetMapping
     public ModelAndView getAllTransactions (){
 
-        List <Transaction> transactions = transactionService.getAllByOwnerId (UUID.fromString ("ef95eeb4-0b9c-43fa-89fd-204b37eeb745"));
+        List <Transaction> transactions = transactionService.getAllByOwnerId (UUID.fromString ("559748e4-acaa-47ea-9456-6ec78e4a02bb"));
 
         ModelAndView modelAndView = new ModelAndView ();
         modelAndView.addObject ("transactions", transactions);
@@ -45,4 +46,21 @@ public class TransactionController {
 
         return modelAndView;
     }
+
+    @GetMapping("/{id}")
+    public ModelAndView getTransactionById (@PathVariable UUID id){
+
+        Transaction transaction = transactionService.getById (id);
+
+        ModelAndView modelAndView = new ModelAndView ();
+        modelAndView.setViewName ("transaction-result");
+        modelAndView.addObject ("transaction", transaction);
+
+
+        return modelAndView;
+        }
+
+
+
+
 }

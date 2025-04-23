@@ -12,7 +12,6 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.UUID;
@@ -24,30 +23,21 @@ public class IndexController {
     private final UserService userService;
 
 
-
     @Autowired
     public IndexController(UserService userService) {
         this.userService = userService;
     }
 
 
-
     // Когато не връщаме модел атрибури, ползваме String
-    @GetMapping("/")
-    public String getIndexPage() {
-
-        return "index";
-    }
-
-    //Login
     @GetMapping("/login")
     public ModelAndView getLoginPage() {
 
-     ModelAndView modelAndView = new ModelAndView();
-     modelAndView.setViewName("login");
-     modelAndView.addObject("loginRequest", new LoginRequest());
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("login");
+        modelAndView.addObject("loginRequest", new LoginRequest());
 
-     return modelAndView;
+        return modelAndView;
     }
 
 
@@ -59,10 +49,8 @@ public class IndexController {
         }
         userService.login(loginRequest);
 
-      return "redirect:/home";
+        return "redirect:/home";
     }
-
-
 
 
 
@@ -82,13 +70,12 @@ public class IndexController {
     public ModelAndView registerNewUser (@Valid RegisterRequest registerRequest, BindingResult bindingResult) {
 
         if (bindingResult.hasErrors()) {
-             return new ModelAndView("register");
+            return new ModelAndView("register");
         }
         userService.register(registerRequest);
 
         return new ModelAndView("redirect:/home");
     }
-
 
 
 
@@ -98,7 +85,7 @@ public class IndexController {
 
         ModelAndView modelAndView = new ModelAndView ();
 
-        User user = userService.getById (UUID.fromString ("ef95eeb4-0b9c-43fa-89fd-204b37eeb745"));
+        User user = userService.getById (UUID.fromString ("559748e4-acaa-47ea-9456-6ec78e4a02bb"));
         modelAndView.addObject ("user", user);
         modelAndView.setViewName ("home");
 

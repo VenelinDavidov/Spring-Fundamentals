@@ -1,5 +1,6 @@
 package app.transaction.service;
 
+import app.exception.DomainException;
 import app.transaction.model.Transaction;
 import app.transaction.model.TransactionStatus;
 import app.transaction.model.TransactionType;
@@ -7,6 +8,7 @@ import app.transaction.repository.TransactionRepository;
 import app.user.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -58,5 +60,14 @@ public class TransactionService {
     public List<Transaction> getAllByOwnerId(UUID ownerId) {
 
         return transactionRepository.findAllByOwnerIdOrderByCreatedOnDesc (ownerId);
+    }
+
+
+
+    public Transaction getById (UUID id){
+
+        return transactionRepository.findById (id)
+                .orElseThrow (() -> new DomainException ("Transaction with id [%s] does not exist."
+                .formatted (id), HttpStatus.BAD_REQUEST));
     }
 }

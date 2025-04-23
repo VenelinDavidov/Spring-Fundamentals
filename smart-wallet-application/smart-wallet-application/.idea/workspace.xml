@@ -4,18 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15fd0253-7a8d-454b-b7b6-4dd9ba9e88a2" name="Changes" comment="new updates for app">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/web/dto/UserEditRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/web/mapper/DtoMapper.java" afterDir="false" />
+    <list default="true" id="15fd0253-7a8d-454b-b7b6-4dd9ba9e88a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/web/TransferController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/web/dto/TransferRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/transaction/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/transaction/service/TransactionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/wallet/repository/WalletRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/wallet/repository/WalletRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/wallet/service/WalletService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/wallet/service/WalletService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/SubscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/SubscriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/TransactionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/dto/UserEditRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/dto/UserEditRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/mapper/DtoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/mapper/DtoMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/profile-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/profile-menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/subscription-history.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/subscription-history.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/transaction-result.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/transaction-result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/transfer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/transfer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/transaction/service/TransactionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/transaction/service/TransactionService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/user/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/wallet/repository/WalletRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/wallet/repository/WalletRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/wallet/service/WalletService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/wallet/service/WalletService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/web/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/web/SubscriptionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/SubscriptionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/web/TransactionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/TransactionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/web/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/web/dto/LoginRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/dto/LoginRequest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/profile-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/profile-menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/subscription-history.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/subscription-history.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/transaction-result.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/transaction-result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/transfer.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/transfer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,22 +69,12 @@
     &quot;assignee&quot;: &quot;VenelinDavidov&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/VenelinDavidov/Spring-Fundamentals.git",
-    "accountId": "77109626-66f9-4b7a-b79d-11733ffcd34d"
-  },
-  "recentNewPullRequestHead": {
-    "server": {
-      "useHttp": false,
-      "host": "github.com",
-      "port": null,
-      "suffix": null
-    },
-    "owner": "VenelinDavidov",
-    "repository": "Spring-Fundamentals"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/VenelinDavidov/Spring-Fundamentals.git&quot;,
+    &quot;accountId&quot;: &quot;89562537-695e-44b2-9e30-76a38d82739b&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -69,18 +89,17 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "#8 on wallet",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ivali/IdeaProjects/Spring Fundamentals/Spring-Fundamentals/smart-wallet-application/smart-wallet-application",
+    "last_opened_file_path": "C:/Users/VITORIYA/IdeaProjects/Spring Fundamentals/smart-wallet-application",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -113,8 +132,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
       </set>
     </attachedChunks>
   </component>
@@ -128,33 +147,10 @@
       <updated>1736782357672</updated>
       <workItem from="1736782358732" duration="332000" />
       <workItem from="1744905447974" duration="11539000" />
-      <workItem from="1744958971866" duration="27426000" />
     </task>
-    <task id="LOCAL-00001" summary="new updates for wallet app">
-      <option name="closed" value="true" />
-      <created>1745054687656</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1745054687656</updated>
-    </task>
-    <task id="LOCAL-00002" summary="new updates for app">
-      <option name="closed" value="true" />
-      <created>1745097703738</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1745097703738</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="new updates for wallet app" />
-    <MESSAGE value="new updates for app" />
-    <option name="LAST_COMMIT_MESSAGE" value="new updates for app" />
   </component>
 </project>

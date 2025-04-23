@@ -9,12 +9,12 @@ public class DtoMapper {
 
     public static UserEditRequest mapUserToUserEditRequest(User user) {
 
-       return UserEditRequest.builder()
-               .firstName(user.getFirstName())
-               .lastName(user.getLastName())
-               .email(user.getEmail())
-               .profilePicture(user.getProfilePicture())
-               .build();
+        return UserEditRequest.builder()
+                .firstName(user.getFirstName())
+                .lastName(user.getLastName())
+                .email(user.getEmail())
+                .profilePicture(user.getProfilePicture())
+                .build();
 
     }
 
