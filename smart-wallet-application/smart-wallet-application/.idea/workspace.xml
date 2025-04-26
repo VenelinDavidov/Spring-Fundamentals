@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15fd0253-7a8d-454b-b7b6-4dd9ba9e88a2" name="Changes" comment="new updates from spring">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/config/WebMvcConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/security/SessionCheckInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/SubscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/SubscriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/TransactionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/TransferController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/TransferController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/transaction-result.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/transaction-result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/transfer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/transfer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/user/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/web/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/web/SubscriptionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/SubscriptionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/web/TransactionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/TransactionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/transaction-result.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/transaction-result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/transfer.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/transfer.html" afterDir="false" />
-    </list>
+    <list default="true" id="15fd0253-7a8d-454b-b7b6-4dd9ba9e88a2" name="Changes" comment="new updates for smart wallet app" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +116,7 @@
       <updated>1736782357672</updated>
       <workItem from="1736782358732" duration="332000" />
       <workItem from="1744905447974" duration="11539000" />
-      <workItem from="1745507900505" duration="20777000" />
+      <workItem from="1745507900505" duration="21656000" />
     </task>
     <task id="LOCAL-00001" summary="new updates from spring">
       <option name="closed" value="true" />
@@ -148,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745440825833</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new updates for smart wallet app">
+      <option name="closed" value="true" />
+      <created>1745683419783</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745683419783</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +142,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new updates from spring" />
-    <option name="LAST_COMMIT_MESSAGE" value="new updates from spring" />
+    <MESSAGE value="new updates for smart wallet app" />
+    <option name="LAST_COMMIT_MESSAGE" value="new updates for smart wallet app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
