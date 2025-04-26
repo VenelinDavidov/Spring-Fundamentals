@@ -52,6 +52,7 @@ public class UserService {
     public User login(LoginRequest loginRequest) {
 
         Optional <User> optionalUser = userRepository.findByUsername (loginRequest.getUsername ());
+
         if (optionalUser.isEmpty ()) {
 
             throw new DomainException ("User with username=[%s] or password [%s] are incorrect."
@@ -92,6 +93,7 @@ public class UserService {
 
         return userRepository.save (user);
     }
+
 
 
     public void editUserDetails(UUID userId, UserEditRequest userEditRequest) {

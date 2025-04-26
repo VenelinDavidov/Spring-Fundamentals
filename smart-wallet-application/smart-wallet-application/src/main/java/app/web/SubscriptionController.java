@@ -2,6 +2,7 @@ package app.web;
 
 import app.user.model.User;
 import app.user.service.UserService;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -32,9 +33,10 @@ public class SubscriptionController {
 
 
     @GetMapping("/history")
-    public ModelAndView getUserSubscriptions (){
+    public ModelAndView getUserSubscriptions (HttpSession session){
 
-        User user = userService.getById (UUID.fromString ("559748e4-acaa-47ea-9456-6ec78e4a02bb"));
+        UUID userId = (UUID) session.getAttribute ("user_id");
+        User user = userService.getById (userId);
 
         ModelAndView modelAndView = new ModelAndView ();
         modelAndView.addObject ("user", user);

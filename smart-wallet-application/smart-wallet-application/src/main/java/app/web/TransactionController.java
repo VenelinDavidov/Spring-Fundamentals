@@ -4,6 +4,7 @@ import app.transaction.model.Transaction;
 import app.transaction.service.TransactionService;
 import app.user.model.User;
 import app.user.service.UserService;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
@@ -36,9 +37,10 @@ public class TransactionController {
 
 
     @GetMapping
-    public ModelAndView getAllTransactions (){
+    public ModelAndView getAllTransactions (HttpSession session){
 
-        List <Transaction> transactions = transactionService.getAllByOwnerId (UUID.fromString ("559748e4-acaa-47ea-9456-6ec78e4a02bb"));
+        UUID userId = (UUID) session.getAttribute ("user_id");
+        List <Transaction> transactions = transactionService.getAllByOwnerId (userId);
 
         ModelAndView modelAndView = new ModelAndView ();
         modelAndView.addObject ("transactions", transactions);
@@ -46,6 +48,7 @@ public class TransactionController {
 
         return modelAndView;
     }
+
 
     @GetMapping("/{id}")
     public ModelAndView getTransactionById (@PathVariable UUID id){
