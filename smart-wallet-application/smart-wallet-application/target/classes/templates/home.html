@@ -93,7 +93,7 @@
               </svg>
             </a>
           </div>
-          <div class="func-block admin-func-block">
+          <div class="func-block admin-func-block" th:if="${user.role.name() == 'ADMIN'}">
             <span>Admin</span>
             <a href="/users">
               <p>Users</p>
@@ -138,7 +138,7 @@
         <h2 class="profile-name" th:text="${user.username}"></h2>
         <div class="profile-status-role-container">
           <p th:if="${user.isActive()}" class="active-profile">ACTIVE</p>
-          <p th:if="${!user.isActive()}" class="active-profile">INACTIVE</p>
+          <p th:if="${!user.isActive()}" class="inactive-profile">INACTIVE</p>
         </div>
         <div class="details-section">
           <div class="details-section-container">
@@ -211,7 +211,7 @@
     </div>
     <div class="single-section-box home-subscription">
       <div class="default-label-box">
-        <p th:text="${user.subscriptions[0].type + ' SUBSCRIPTION'}"></p>
+        <p th:text="${user.subscriptions[0].type.name() + ' SUBSCRIPTION'}"></p>
       </div>
       <table class="styled-table">
         <thead>

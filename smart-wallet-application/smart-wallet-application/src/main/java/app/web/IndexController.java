@@ -81,7 +81,7 @@ public class IndexController {
         }
         userService.register(registerRequest);
 
-        return new ModelAndView("redirect:/home");
+        return new ModelAndView("redirect:/login");
     }
 
 
@@ -104,11 +104,12 @@ public class IndexController {
     }
 
 
+
+    //Logout
     @GetMapping("/logout")
     public  String getLogout (HttpSession session){
 
         session.invalidate ();
-
         return "redirect:/";
     }
 }

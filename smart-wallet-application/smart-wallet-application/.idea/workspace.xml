@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15fd0253-7a8d-454b-b7b6-4dd9ba9e88a2" name="Changes" comment="new updates for smart wallet app" />
+    <list default="true" id="15fd0253-7a8d-454b-b7b6-4dd9ba9e88a2" name="Changes" comment="new updates">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/security/RequireAdminRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/web/dto/UpgradeRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/security/SessionCheckInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/security/SessionCheckInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/subscription/repository/SubscriptionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/subscription/repository/SubscriptionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/subscription/service/SubscriptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/subscription/service/SubscriptionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/SubscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/SubscriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/upgrade.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/upgrade.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/subscription/service/SubscriptionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/subscription/service/SubscriptionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/user/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/web/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/web/SubscriptionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/SubscriptionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/web/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/upgrade.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/upgrade.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/users.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -21,9 +45,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {}
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
   <component name="GitHubPullRequestState">{
   &quot;prStates&quot;: [
     {
@@ -39,6 +63,16 @@
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/VenelinDavidov/Spring-Fundamentals.git&quot;,
     &quot;accountId&quot;: &quot;89562537-695e-44b2-9e30-76a38d82739b&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;VenelinDavidov&quot;,
+    &quot;repository&quot;: &quot;Spring-Fundamentals&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -56,8 +90,8 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "wallet",
+    "Spring Boot.Application.executor": "Debug",
+    "git-widget-placeholder": "#11 on wallet",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/VITORIYA/IdeaProjects/Spring Fundamentals/smart-wallet-application",
     "node.js.detected.package.eslint": "true",
@@ -114,6 +148,20 @@
       <workItem from="1736782358732" duration="332000" />
       <workItem from="1744905447974" duration="11539000" />
       <workItem from="1745507900505" duration="22107000" />
+      <workItem from="1745782980509" duration="33000" />
+      <workItem from="1745783715056" duration="14000" />
+      <workItem from="1745786044044" duration="53000" />
+      <workItem from="1745786234689" duration="142000" />
+      <workItem from="1745787163103" duration="34000" />
+      <workItem from="1745815232722" duration="105000" />
+      <workItem from="1745857362841" duration="581000" />
+      <workItem from="1745858518539" duration="31000" />
+      <workItem from="1745858610624" duration="8000" />
+      <workItem from="1745858805063" duration="6000" />
+      <workItem from="1745858879245" duration="18000" />
+      <workItem from="1745859030108" duration="74000" />
+      <workItem from="1745859110934" duration="775000" />
+      <workItem from="1745859913939" duration="18205000" />
     </task>
     <task id="LOCAL-00001" summary="new updates from spring">
       <option name="closed" value="true" />
@@ -154,9 +202,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/app/web/IndexController.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="21" />
+          <url>file://$PROJECT_DIR$/src/main/java/app/subscription/service/SubscriptionService.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

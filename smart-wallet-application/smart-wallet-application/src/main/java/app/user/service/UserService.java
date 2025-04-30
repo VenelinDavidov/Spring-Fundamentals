@@ -136,6 +136,34 @@ public class UserService {
 
         return userRepository.findById (uuid)
                 .orElseThrow (()-> new DomainException ("User with id [%s] doesn't exist"
-                        .formatted (uuid),HttpStatus.BAD_REQUEST));
+                .formatted (uuid),HttpStatus.BAD_REQUEST));
+    }
+
+
+    public void switchStatus(UUID userId) {
+
+        User user = userRepository.getById (userId);
+        user.setActive (!user.isActive ());
+//        if (user.isActive ()){
+//            user.setActive (false);
+//        }else{
+//            user.setActive (true);
+//        }
+
+        userRepository.save (user);
+    }
+
+
+    public void switchRole(UUID userId) {
+
+        User user = userRepository.getById (userId);
+
+        if (user.getRole () == UserRole.USER){
+            user.setRole (UserRole.ADMIN);
+        }else{
+            user.setRole (UserRole.USER);
+        }
+
+        userRepository.save (user);
     }
 }
