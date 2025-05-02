@@ -4,29 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15fd0253-7a8d-454b-b7b6-4dd9ba9e88a2" name="Changes" comment="new updates">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/security/RequireAdminRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/web/dto/UpgradeRequest.java" afterDir="false" />
+    <list default="true" id="15fd0253-7a8d-454b-b7b6-4dd9ba9e88a2" name="Changes" comment="new updates for Spring App Wallet">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/scheduler/SubscriptionRenewalScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/security/SessionCheckInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/security/SessionCheckInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/subscription/repository/SubscriptionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/subscription/repository/SubscriptionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/subscription/service/SubscriptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/subscription/service/SubscriptionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/SubscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/SubscriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/upgrade.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/upgrade.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/subscription/repository/SubscriptionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/subscription/repository/SubscriptionRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/subscription/service/SubscriptionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/subscription/service/SubscriptionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/user/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/web/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/web/SubscriptionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/SubscriptionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/web/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/upgrade.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/upgrade.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/users.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +24,7 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -56,6 +43,13 @@
         &quot;number&quot;: 8
       },
       &quot;lastSeen&quot;: 1745440897147
+    },
+    {
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOOYtcus6UBap2&quot;,
+        &quot;number&quot;: 11
+      },
+      &quot;lastSeen&quot;: 1745987835440
     }
   ]
 }</component>
@@ -90,7 +84,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Application.executor": "Debug",
+    "Spring Boot.Application.executor": "Run",
     "git-widget-placeholder": "#11 on wallet",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/VITORIYA/IdeaProjects/Spring Fundamentals/smart-wallet-application",
@@ -161,7 +155,8 @@
       <workItem from="1745858879245" duration="18000" />
       <workItem from="1745859030108" duration="74000" />
       <workItem from="1745859110934" duration="775000" />
-      <workItem from="1745859913939" duration="18205000" />
+      <workItem from="1745859913939" duration="23685000" />
+      <workItem from="1746114740568" duration="5339000" />
     </task>
     <task id="LOCAL-00001" summary="new updates from spring">
       <option name="closed" value="true" />
@@ -187,7 +182,23 @@
       <option name="project" value="LOCAL" />
       <updated>1745683496361</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="new updates for Spring App Wallet">
+      <option name="closed" value="true" />
+      <created>1745987882363</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745987882363</updated>
+    </task>
+    <task id="LOCAL-00005" summary="new updates for Spring App Wallet">
+      <option name="closed" value="true" />
+      <created>1745987939152</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745987939152</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,17 +207,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new updates from spring" />
     <MESSAGE value="new updates for smart wallet app" />
-    <option name="LAST_COMMIT_MESSAGE" value="new updates for smart wallet app" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/app/subscription/service/SubscriptionService.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="new updates for Spring App Wallet" />
+    <option name="LAST_COMMIT_MESSAGE" value="new updates for Spring App Wallet" />
   </component>
 </project>
