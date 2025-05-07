@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/commons::head}"></head>
+<body>
+<header th:replace="~{fragments/commons::nav}"></header>
+<main>
+    <div class="welcome mt-1 mb-4">
+        <p class="mySticky bg-gray text-dark user" th:text="${'Welcome ' +  user.username}"></p>
+        <div class="row mt-1 mb-2">
+            <div class="col-6 mt-1 mb-1">
+                <div>
+                    <div class="home-fields" style="height: 80vh; overflow: auto">
+                        <h3 class="my-stamps">My Stamps</h3>
+                        <table class="my-table table-striped table-dark">
+                            <tr class="my-stamps" th:each="stamp : ${user.stamps}">
+                                <td>
+                                    <img th:src="${stamp.imageURl}" alt="The Queen" width="70px" height="70px">
+                                </td>
+                                <td class="my-cell-container">
+                                    <div>Name: <span th:text="${stamp.name}"></span></div>
+                                    <div>Description: <span th:text="${stamp.description}"></span></div>
+                                    <div>Used paper: <span th:text="${stamp.paper}"></span></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 mt-1 mb-1">
+                <div class="home-fields" style="height: 40vh; overflow: auto">
+                    <h3 class="my-stamps">Offered Stamps</h3>
+                    <ul class="list-group list-group-vertical text-dark">
+                        <li th:each="stamp : ${allStamps}" th:if="${stamp.owner.id != user.id}">
+                            <div class="my-stamps-first-row">
+                                <div class="img1">
+                                    <img id="image" width="85px"
+                                         th:src="${stamp.imageURl}"
+                                         alt="US Mail"
+                                         height="85" style="padding-top: 0.3em; padding-left: 0.3em; margin-top: 2.3em">
+                                </div>
+                                <div class="stamp-info">
+                                    <p>Name: <span th:text="${stamp.name}"></span></p>
+                                    <p>Description: <span th:text="${stamp.description}"></span></p>
+                                </div>
+                            </div>
+                            <div class="buttons-info">
+                                <div class="favorite">
+                                    <form th:action="@{'/stamps/' + ${stamp.id} + '/whishlist'}" th:method="POST">
+                                        <button  class="btn-outline-info btn">To Wishlist</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="second-info">
+                                <p th:text="${'Added by: ' + stamp.owner.username}"></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="home-fields" style="height: 39vh; overflow: auto">
+                    <h3 class="my-stamps">My Wishlist</h3>
+                    <div class="wish-list">
+                        <table class="my-table my-wishlist">
+                            <tr class="my-stamps" th:each="stamp : ${user.wishedStamps}">
+                                <td>
+                                    <img th:src="${stamp.imageURl}"
+                                         alt="US Mail" width="55px" height="55" style="padding-top: 0.3em; padding-left: 0.3em">
+                                </td>
+                                <td style="text-align: start; padding-left: 5px" th:text="${stamp.name}"></td>
+                                <td style="width: 15%; padding-top: 8px; padding-right: 5px">
+                                    <form th:action="@{'/stamps/' + ${stamp.id}}" th:method="DELETE">
+                                        <button class="btn-danger btn">Remove</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer bg-transparent py-2">
+    <div class="container-fluid text-center">
+        <div class="footer-background footer-text fixed-bottom">
+            &copy; Spring team 2024. All rights reserved.
+        </div>
+    </div>
+</footer>
+</body>
+</html>
