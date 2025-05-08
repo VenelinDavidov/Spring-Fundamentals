@@ -6,6 +6,7 @@ import app.subscription.model.Subscription;
 import app.subscription.service.SubscriptionService;
 import app.user.model.User;
 import app.user.model.UserRole;
+import app.user.property.UserProperties;
 import app.user.repository.UserRepository;
 import app.wallet.model.Wallet;
 import app.wallet.service.WalletService;
@@ -32,6 +33,7 @@ public class UserService {
     private final PasswordEncoder passwordEncoder;
     private final SubscriptionService subscriptionService;
     private final WalletService walletService;
+    private final UserProperties userProperties;
 
 
     //Constructor
@@ -39,11 +41,13 @@ public class UserService {
     public UserService(UserRepository userRepository,
                        PasswordEncoder passwordEncoder,
                        SubscriptionService subscriptionService,
-                       WalletService walletService) {
+                       WalletService walletService,
+                       UserProperties userProperties) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
         this.subscriptionService = subscriptionService;
         this.walletService = walletService;
+        this.userProperties = userProperties;
     }
 
 
@@ -117,8 +121,8 @@ public class UserService {
         return User.builder ()
                 .username (dto.getUsername ())
                 .password (passwordEncoder.encode (dto.getPassword ()))
-                .role (UserRole.USER)
-                .isActive (true)
+                .role (userProperties.getDefaultRole ())
+                .isActive (userProperties.isActiveByDefault ())
                 .country (dto.getCountry ())
                 .createdOn (LocalDateTime.now ())
                 .updatedOn (LocalDateTime.now ())

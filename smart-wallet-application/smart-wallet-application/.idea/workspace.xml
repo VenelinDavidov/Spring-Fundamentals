@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15fd0253-7a8d-454b-b7b6-4dd9ba9e88a2" name="Changes" comment="new updates for Spring App Wallet">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/scheduler/SubscriptionRenewalScheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="15fd0253-7a8d-454b-b7b6-4dd9ba9e88a2" name="Changes" comment="new updates App Wallet">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/user/property/UserProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/subscription/repository/SubscriptionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/subscription/repository/SubscriptionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/subscription/service/SubscriptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/subscription/service/SubscriptionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/subscription/repository/SubscriptionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/subscription/repository/SubscriptionRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/subscription/service/SubscriptionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/subscription/service/SubscriptionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/config/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/config/BeanConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +48,13 @@
         &quot;number&quot;: 11
       },
       &quot;lastSeen&quot;: 1745987835440
+    },
+    {
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOOYtcus6UtaUB&quot;,
+        &quot;number&quot;: 12
+      },
+      &quot;lastSeen&quot;: 1746161404432
     }
   ]
 }</component>
@@ -69,9 +74,9 @@
     &quot;repository&quot;: &quot;Spring-Fundamentals&quot;
   }
 }</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2ra1Qj0Kxi0B6BeRvNoZYwlSnOR" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -84,8 +89,8 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "#11 on wallet",
+    "Spring Boot.Application.executor": "Debug",
+    "git-widget-placeholder": "#12 on wallet",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/VITORIYA/IdeaProjects/Spring Fundamentals/smart-wallet-application",
     "node.js.detected.package.eslint": "true",
@@ -156,7 +161,21 @@
       <workItem from="1745859030108" duration="74000" />
       <workItem from="1745859110934" duration="775000" />
       <workItem from="1745859913939" duration="23685000" />
-      <workItem from="1746114740568" duration="5339000" />
+      <workItem from="1746114740568" duration="7462000" />
+      <workItem from="1746214801936" duration="33000" />
+      <workItem from="1746215138598" duration="18000" />
+      <workItem from="1746269159320" duration="30000" />
+      <workItem from="1746269896932" duration="9000" />
+      <workItem from="1746269908843" duration="1000" />
+      <workItem from="1746304985001" duration="346000" />
+      <workItem from="1746350938147" duration="415000" />
+      <workItem from="1746366436967" duration="13000" />
+      <workItem from="1746367556233" duration="737000" />
+      <workItem from="1746385058105" duration="395000" />
+      <workItem from="1746457450450" duration="109000" />
+      <workItem from="1746457616261" duration="855000" />
+      <workItem from="1746470676133" duration="127000" />
+      <workItem from="1746728165465" duration="4562000" />
     </task>
     <task id="LOCAL-00001" summary="new updates from spring">
       <option name="closed" value="true" />
@@ -198,7 +217,23 @@
       <option name="project" value="LOCAL" />
       <updated>1745987939152</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new updates App Wallet">
+      <option name="closed" value="true" />
+      <created>1746161054657</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746161054657</updated>
+    </task>
+    <task id="LOCAL-00007" summary="new updates App Wallet">
+      <option name="closed" value="true" />
+      <created>1746161607534</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1746161607534</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +243,18 @@
     <MESSAGE value="new updates from spring" />
     <MESSAGE value="new updates for smart wallet app" />
     <MESSAGE value="new updates for Spring App Wallet" />
-    <option name="LAST_COMMIT_MESSAGE" value="new updates for Spring App Wallet" />
+    <MESSAGE value="new updates App Wallet" />
+    <option name="LAST_COMMIT_MESSAGE" value="new updates App Wallet" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/user/service/UserService.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
