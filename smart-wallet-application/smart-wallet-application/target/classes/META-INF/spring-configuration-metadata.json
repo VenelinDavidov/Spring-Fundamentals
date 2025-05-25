@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "domain.user.properties",
+      "type": "app.user.property.UserProperties",
+      "sourceType": "app.user.property.UserProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "domain.user.properties.default-role",
+      "type": "app.user.model.UserRole",
+      "sourceType": "app.user.property.UserProperties"
+    },
+    {
+      "name": "domain.user.properties.is-active-by-default",
+      "type": "java.lang.Boolean",
+      "sourceType": "app.user.property.UserProperties"
+    }
+  ],
+  "hints": []
+}

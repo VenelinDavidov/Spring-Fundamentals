@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="95b3101a-a9da-479c-8108-4a5df500666f" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2ijTMfV4O4BDi358UryA4FXnqvu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PhilatelyApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.StampsExchangeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/VITORIYA/Downloads/Philately/Philately&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\ExamViktor\Skeleton\Philately\src\main\java\Philately\stamp" />
+      <recent name="C:\Users\User\Documents\SpringFundamentalsRetakeExam202415August\Philately\src\main\resources\static\img" />
+      <recent name="C:\Users\User\Desktop\StampsExchange\src\main\resources\static\img" />
+      <recent name="C:\Users\User\Desktop\StampsExchange\src\main\resources\templates" />
+      <recent name="C:\Users\User\Desktop\StampsExchange\src\main\java\project\stampsexchange\controller" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="project.stampsexchange.controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Philately.security" />
+      <recent name="Philately.config" />
+      <recent name="project.philately.model.dto" />
+      <recent name="project.philately.validation" />
+      <recent name="project.philately.validation.annotation" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Philately" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="Philately.Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Philately.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95b3101a-a9da-479c-8108-4a5df500666f" name="Changes" comment="" />
+      <created>1720002939576</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720002939576</updated>
+      <workItem from="1720002940580" duration="32578000" />
+      <workItem from="1720609097617" duration="55981000" />
+      <workItem from="1720940850013" duration="38921000" />
+      <workItem from="1723100442088" duration="599000" />
+      <workItem from="1723184586987" duration="5059000" />
+      <workItem from="1726213776023" duration="13628000" />
+      <workItem from="1726481208451" duration="2968000" />
+      <workItem from="1726639440961" duration="6122000" />
+      <workItem from="1727334675961" duration="1686000" />
+      <workItem from="1727418894559" duration="599000" />
+      <workItem from="1727692775572" duration="599000" />
+      <workItem from="1727857205134" duration="1194000" />
+      <workItem from="1728884270971" duration="385000" />
+      <workItem from="1728884674071" duration="599000" />
+      <workItem from="1733402810894" duration="4024000" />
+      <workItem from="1733738827294" duration="1417000" />
+      <workItem from="1733750839737" duration="678000" />
+      <workItem from="1733901447656" duration="5848000" />
+      <workItem from="1734173695982" duration="4654000" />
+      <workItem from="1734349244318" duration="599000" />
+      <workItem from="1734594626351" duration="2803000" />
+      <workItem from="1735026862111" duration="44312000" />
+      <workItem from="1737026756885" duration="41978000" />
+      <workItem from="1737713584766" duration="1239000" />
+      <workItem from="1737971186993" duration="118000" />
+      <workItem from="1737971317444" duration="3810000" />
+      <workItem from="1738425918320" duration="14361000" />
+      <workItem from="1738738965674" duration="2741000" />
+      <workItem from="1738741765979" duration="1644000" />
+      <workItem from="1739171126221" duration="13561000" />
+      <workItem from="1739346911530" duration="2319000" />
+      <workItem from="1739377339606" duration="5070000" />
+      <workItem from="1739385502833" duration="629000" />
+      <workItem from="1739456231547" duration="116000" />
+      <workItem from="1746350520944" duration="384000" />
+      <workItem from="1746350920477" duration="15000" />
+      <workItem from="1746352270149" duration="31000" />
+      <workItem from="1746366050110" duration="384000" />
+      <workItem from="1746366453407" duration="605000" />
+      <workItem from="1746367265394" duration="286000" />
+      <workItem from="1746369446033" duration="644000" />
+      <workItem from="1746370936261" duration="1518000" />
+      <workItem from="1746372509158" duration="93000" />
+      <workItem from="1746372688381" duration="179000" />
+      <workItem from="1746372983676" duration="17000" />
+      <workItem from="1746373229065" duration="605000" />
+      <workItem from="1746393674206" duration="16000" />
+      <workItem from="1746457565231" duration="48000" />
+      <workItem from="1746474145782" duration="3252000" />
+      <workItem from="1746477861840" duration="11226000" />
+      <workItem from="1746587677097" duration="5257000" />
+      <workItem from="1746627913421" duration="6486000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Philately$PhilatelyApplication.ic" NAME="PhilatelyApplication Coverage Results" MODIFIED="1739385584441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>Philately.*</FILTER>
+    </SUITE>
+  </component>
+</project>

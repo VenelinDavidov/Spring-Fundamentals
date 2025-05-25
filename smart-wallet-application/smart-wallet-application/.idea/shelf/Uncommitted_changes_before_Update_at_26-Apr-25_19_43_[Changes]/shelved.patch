@@ -1,0 +1,11 @@
+Index: ../../README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../README.md b/../../README.md
+new file mode 100644
+--- /dev/null	(date 1745685683543)
++++ b/../../README.md	(date 1745685683543)
+@@ -0,0 +1,1 @@
++![1000003006](https://github.com/user-attachments/assets/7d7e3da6-b0b0-499a-837b-8ecf10da7b47)

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="57fec7ab-543f-4080-bc05-91ba6c102769" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../smart-wallet-application/smart-wallet-application/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../smart-wallet-application/smart-wallet-application/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../smart-wallet-application/smart-wallet-application/target/classes/app/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../smart-wallet-application/smart-wallet-application/target/classes/app/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../smart-wallet-application/smart-wallet-application/target/classes/app/config/BeanConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../smart-wallet-application/smart-wallet-application/target/classes/app/config/BeanConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../smart-wallet-application/smart-wallet-application/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../smart-wallet-application/smart-wallet-application/target/classes/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;VenelinDavidov&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/VenelinDavidov/Spring-Fundamentals.git&quot;,
+    &quot;accountId&quot;: &quot;89562537-695e-44b2-9e30-76a38d82739b&quot;
+  }
+}</component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2fM2Vuzd83vyUm6hyGiA9xYZZ7c" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.PaintingsCollectorsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ResellerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#12 on wallet&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/VITORIYA/IdeaProjects/Spring Fundamentals/Exam Prep/PaintingsCollectors-App-Skeleton/PaintingsCollectors-App&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Videos\PaintingsCollectors-App\src\main\java\com\paintingscollectors\model" />
+      <recent name="C:\Users\User\Videos\PaintingsCollectors-App\src\main\java\com\paintingscollectors\service" />
+      <recent name="C:\Users\User\Videos\PaintingsCollectors-App\src\main\java\com\paintingscollectors\vallidation" />
+      <recent name="C:\Users\User\Videos\PaintingsCollectors-App\src\main\java\com\resellerapp\repository" />
+      <recent name="C:\Users\User\Videos\PaintingsCollectors-App\src\main\java\com\resellerapp\service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.resellerapp.config" />
+      <recent name="com.resellerapp.util" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.paintingscollectors.Application" />
+      <module name="PaintingsCollectors-App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.paintingscollectors.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="PaintingsCollectors-App" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.paintingscollectors.Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.paintingscollectors.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Spring Boot.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="57fec7ab-543f-4080-bc05-91ba6c102769" name="Changes" comment="" />
+      <created>1713596652319</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713596652319</updated>
+      <workItem from="1713596653425" duration="82000" />
+      <workItem from="1713597034591" duration="157000" />
+      <workItem from="1716193270228" duration="10008000" />
+      <workItem from="1716368052467" duration="5388000" />
+      <workItem from="1716962370254" duration="4213000" />
+      <workItem from="1718104268991" duration="4445000" />
+      <workItem from="1718694869679" duration="66000" />
+      <workItem from="1738929648135" duration="4239000" />
+      <workItem from="1738934650796" duration="17133000" />
+      <workItem from="1739200461107" duration="868000" />
+      <workItem from="1746214507247" duration="290000" />
+      <workItem from="1746214839308" duration="296000" />
+      <workItem from="1746215159349" duration="500000" />
+      <workItem from="1746266566922" duration="2583000" />
+      <workItem from="1746269193047" duration="700000" />
+      <workItem from="1746269913318" duration="9535000" />
+      <workItem from="1746294475112" duration="208000" />
+      <workItem from="1746294820472" duration="677000" />
+      <workItem from="1746298179955" duration="2707000" />
+      <workItem from="1746301203487" duration="3742000" />
+      <workItem from="1746305337560" duration="9907000" />
+      <workItem from="1746367184997" duration="77000" />
+      <workItem from="1746373003854" duration="27000" />
+      <workItem from="1746384924946" duration="124000" />
+      <workItem from="1746477422821" duration="174000" />
+      <workItem from="1746477602605" duration="22000" />
+      <workItem from="1746648963083" duration="16000" />
+      <workItem from="1746804253847" duration="69000" />
+      <workItem from="1747770130770" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
