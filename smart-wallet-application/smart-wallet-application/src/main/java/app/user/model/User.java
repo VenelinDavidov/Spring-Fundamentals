@@ -25,10 +25,14 @@ public class User {
     @Column(nullable = false, unique = true)
     private String username;
 
+    @Column
     private String firstName;
 
+    @Column
     private String lastName;
 
+
+    @Column
     private String profilePicture;
 
     @Column(unique = true)
@@ -59,3 +63,4 @@ public class User {
     @OrderBy("createdOn DESC")
     private List<Wallet> wallets = new ArrayList<> ();
 }
+

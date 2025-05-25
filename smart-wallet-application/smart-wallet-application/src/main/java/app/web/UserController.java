@@ -1,8 +1,8 @@
 package app.web;
 
+import app.security.RequireAdminRole;
 import app.user.model.User;
 import app.user.service.UserService;
-import app.web.dto.UserEditRequest;
 import app.web.mapper.DtoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.List;
 import java.util.UUID;
 
 @Controller
@@ -29,6 +30,18 @@ public class UserController {
         this.userService = userService;
     }
 
+      @RequireAdminRole
+      @GetMapping
+      public ModelAndView getAllUsers(){
+
+        List <User> users = userService.getAllUsers ();
+
+        ModelAndView modelAndView = new ModelAndView ();
+        modelAndView.setViewName ("users");
+        modelAndView.addObject ("users", users);
+
+        return modelAndView;
+      }
 
 
 
@@ -48,11 +61,20 @@ public class UserController {
 
 
 
-    @PutMapping("/{id}/profile")
-    public String updateUserProfile (@PathVariable UUID id, UserEditRequest userEditRequest){
+    @PutMapping("/{id}/status") // PUT -> /users/ {id} /status
+    public String updateUserStatus (@PathVariable UUID id){
 
-        userService.editUserDetails(id, userEditRequest);
+        userService.switchStatus(id);
 
-        return "redirect:/home";
+        return "redirect:/users";
+    }
+
+
+    @PutMapping("/{id}/role") // PUT -> /users/ {id} /role
+    public String updateUserRole (@PathVariable UUID id){
+
+        userService.switchRole (id);
+
+        return "redirect:/users";
     }
 }

@@ -4,49 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15fd0253-7a8d-454b-b7b6-4dd9ba9e88a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/web/TransferController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/web/dto/TransferRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/transaction/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/transaction/service/TransactionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/wallet/repository/WalletRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/wallet/repository/WalletRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/wallet/service/WalletService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/wallet/service/WalletService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/SubscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/SubscriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/TransactionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/dto/UserEditRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/dto/UserEditRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/web/mapper/DtoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/web/mapper/DtoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/profile-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/profile-menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/subscription-history.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/subscription-history.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/transaction-result.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/transaction-result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/transfer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/transfer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/transaction/service/TransactionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/transaction/service/TransactionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/user/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/wallet/repository/WalletRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/wallet/repository/WalletRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/wallet/service/WalletService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/wallet/service/WalletService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/web/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/web/SubscriptionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/SubscriptionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/web/TransactionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/TransactionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/web/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/web/dto/LoginRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/web/dto/LoginRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/profile-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/profile-menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/subscription-history.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/subscription-history.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/transaction-result.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/transaction-result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/transfer.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/transfer.html" afterDir="false" />
-    </list>
+    <list default="true" id="15fd0253-7a8d-454b-b7b6-4dd9ba9e88a2" name="Changes" comment="new updates" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,58 +14,99 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="smart_wallet" />
+        <entry key="$PROJECT_DIR$/../../../Spring-Advanced-" value="wallets" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../Spring-Advanced-" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;VenelinDavidov&quot;
-  }
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
+    {
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOOYtcus6TCq4q&quot;,
+        &quot;number&quot;: 8
+      },
+      &quot;lastSeen&quot;: 1745440897147
+    },
+    {
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOOYtcus6UBap2&quot;,
+        &quot;number&quot;: 11
+      },
+      &quot;lastSeen&quot;: 1745987835440
+    },
+    {
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOOYtcus6UtaUB&quot;,
+        &quot;number&quot;: 12
+      },
+      &quot;lastSeen&quot;: 1746161404432
+    }
+  ]
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/VenelinDavidov/Spring-Fundamentals.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/VenelinDavidov/Spring-Fundamentals-.git&quot;,
     &quot;accountId&quot;: &quot;89562537-695e-44b2-9e30-76a38d82739b&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;VenelinDavidov&quot;,
+    &quot;repository&quot;: &quot;Spring-Advanced-&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2ra1Qj0Kxi0B6BeRvNoZYwlSnOR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "#8 on wallet",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/VITORIYA/IdeaProjects/Spring Fundamentals/smart-wallet-application",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#10 on main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/VITORIYA/IdeaProjects/Spring-Advanced&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -147,10 +146,178 @@
       <updated>1736782357672</updated>
       <workItem from="1736782358732" duration="332000" />
       <workItem from="1744905447974" duration="11539000" />
+      <workItem from="1745507900505" duration="22107000" />
+      <workItem from="1745782980509" duration="33000" />
+      <workItem from="1745783715056" duration="14000" />
+      <workItem from="1745786044044" duration="53000" />
+      <workItem from="1745786234689" duration="142000" />
+      <workItem from="1745787163103" duration="34000" />
+      <workItem from="1745815232722" duration="105000" />
+      <workItem from="1745857362841" duration="581000" />
+      <workItem from="1745858518539" duration="31000" />
+      <workItem from="1745858610624" duration="8000" />
+      <workItem from="1745858805063" duration="6000" />
+      <workItem from="1745858879245" duration="18000" />
+      <workItem from="1745859030108" duration="74000" />
+      <workItem from="1745859110934" duration="775000" />
+      <workItem from="1745859913939" duration="23685000" />
+      <workItem from="1746114740568" duration="7462000" />
+      <workItem from="1746214801936" duration="33000" />
+      <workItem from="1746215138598" duration="18000" />
+      <workItem from="1746269159320" duration="30000" />
+      <workItem from="1746269896932" duration="9000" />
+      <workItem from="1746269908843" duration="1000" />
+      <workItem from="1746304985001" duration="346000" />
+      <workItem from="1746350938147" duration="415000" />
+      <workItem from="1746366436967" duration="13000" />
+      <workItem from="1746367556233" duration="737000" />
+      <workItem from="1746385058105" duration="395000" />
+      <workItem from="1746457450450" duration="109000" />
+      <workItem from="1746457616261" duration="855000" />
+      <workItem from="1746470676133" duration="127000" />
+      <workItem from="1746728165465" duration="5341000" />
+      <workItem from="1746766652620" duration="39000" />
+      <workItem from="1746862440888" duration="262000" />
+      <workItem from="1746872290467" duration="56000" />
+      <workItem from="1746875629696" duration="44000" />
+      <workItem from="1746884202852" duration="141000" />
+      <workItem from="1746894720134" duration="105000" />
+      <workItem from="1746994098216" duration="124000" />
+      <workItem from="1747076226968" duration="704000" />
+      <workItem from="1747109498140" duration="1068000" />
+      <workItem from="1747153663625" duration="7786000" />
+      <workItem from="1747335359415" duration="1817000" />
+      <workItem from="1747770138204" duration="3000" />
+      <workItem from="1747799707934" duration="4000" />
+      <workItem from="1748169819586" duration="34000" />
+      <workItem from="1748171899120" duration="2897000" />
+      <workItem from="1748174845711" duration="86000" />
+      <workItem from="1748175152716" duration="55000" />
+      <workItem from="1748175473848" duration="2000" />
+      <workItem from="1748175530608" duration="58000" />
+      <workItem from="1748175730509" duration="56000" />
+      <workItem from="1748176070405" duration="653000" />
     </task>
+    <task id="LOCAL-00001" summary="new updates from spring">
+      <option name="closed" value="true" />
+      <created>1745440825833</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745440825833</updated>
+    </task>
+    <task id="LOCAL-00002" summary="new updates for smart wallet app">
+      <option name="closed" value="true" />
+      <created>1745683419783</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745683419783</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new updates for smart wallet app">
+      <option name="closed" value="true" />
+      <created>1745683496361</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745683496361</updated>
+    </task>
+    <task id="LOCAL-00004" summary="new updates for Spring App Wallet">
+      <option name="closed" value="true" />
+      <created>1745987882363</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745987882363</updated>
+    </task>
+    <task id="LOCAL-00005" summary="new updates for Spring App Wallet">
+      <option name="closed" value="true" />
+      <created>1745987939152</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745987939152</updated>
+    </task>
+    <task id="LOCAL-00006" summary="new updates App Wallet">
+      <option name="closed" value="true" />
+      <created>1746161054657</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746161054657</updated>
+    </task>
+    <task id="LOCAL-00007" summary="new updates App Wallet">
+      <option name="closed" value="true" />
+      <created>1746161607534</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1746161607534</updated>
+    </task>
+    <task id="LOCAL-00008" summary="new updates">
+      <option name="closed" value="true" />
+      <created>1746733628214</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746733628214</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add new colum in table">
+      <option name="closed" value="true" />
+      <created>1748172773872</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1748172773872</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add new @colum in table">
+      <option name="closed" value="true" />
+      <created>1748173959833</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1748173959833</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
+    <MESSAGE value="new updates from spring" />
+    <MESSAGE value="new updates for smart wallet app" />
+    <MESSAGE value="new updates for Spring App Wallet" />
+    <MESSAGE value="new updates App Wallet" />
+    <MESSAGE value="new updates" />
+    <MESSAGE value="add new colum in table" />
+    <MESSAGE value="add new @colum in table" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new @colum in table" />
   </component>
 </project>
