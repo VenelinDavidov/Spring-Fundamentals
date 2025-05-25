@@ -90,9 +90,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#10 on main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/VITORIYA/IdeaProjects/Spring-Advanced&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/VITORIYA/IdeaProjects/Spring-Advanced/smart-wallet&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -197,6 +196,10 @@
       <workItem from="1748175530608" duration="58000" />
       <workItem from="1748175730509" duration="56000" />
       <workItem from="1748176070405" duration="653000" />
+      <workItem from="1748177765736" duration="632000" />
+      <workItem from="1748178402426" duration="263000" />
+      <workItem from="1748178686644" duration="3000" />
+      <workItem from="1748180045249" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="new updates from spring">
       <option name="closed" value="true" />
@@ -310,6 +313,7 @@
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/../.." />
+      <path value="$PROJECT_DIR$/../../../Spring-Advanced-" />
     </ignored-roots>
     <MESSAGE value="new updates from spring" />
     <MESSAGE value="new updates for smart wallet app" />
