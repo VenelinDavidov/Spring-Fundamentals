@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Arena</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Inter:wght@400;600;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/home.css"> <!-- reuse base style -->
+    <link rel="stylesheet" href="/css/arena.css"> <!-- arena overrides -->
+</head>
+<body>
+
+<th:block th:insert="~{/fragments/index-fragments :: corner-veil}"></th:block>
+<th:block th:insert="~{/fragments/index-fragments :: particles}"></th:block>
+<div class="auth-blur"></div>
+<main class="arena-shell">
+
+    <h1 class="arena-title">Hogwarts Arena</h1>
+
+    <div class="back-actions">
+        <!-- TODO: use the correct url here that brings the user to home page  -->
+        <a href="/correct-url-here" class="btn btn-secondary">Back to Home</a>
+    </div>
+
+    <!-- Gryffindor -->
+    <section class="section panel">
+        <header class="section-head">
+            <h3>Gryffindor</h3>
+            <!--   TODO: Number of wizards in this house    -->
+            <span class="count-badge house-gryffindor">99</span>
+        </header>
+        <div class="cards wiz-cards">
+        <!-- TODO: loop through every wizard in this house -->
+            <article class="spell-card wiz-card">
+                <div class="media">
+                    <!-- TODO: wizard's avatar url -->
+                    <img src="/images/default-avatar.png">
+                    <div class="pills">
+                        <!-- TODO: wizard's alignment (if) -->
+                        <span class="pill pill-align-light">Light</span>
+                        <!--<span class="pill pill-align-dark">Dark</span>-->
+                    </div>
+                </div>
+                <div class="body">
+                    <h4 class="spell-name">Wanda</h4> <!-- TODO: wizard's username -->
+                    <div class="meta">
+                        <!-- TODO: wizard's spell count -->
+                        <span class="meta-item">Spells <strong>5</strong></span>
+                        <!-- TODO: wizard's spells power sum (sum the power of every spell this user has learned) -->
+                        <span class="meta-item">Power <strong>312</strong></span>
+                    </div>
+                </div>
+            </article>
+        <!-- TODO: Display this when there are no wizards in this house -->
+        <!--<p class="empty muted">No students yet.</p>-->
+        </div>
+    </section>
+
+    <!-- Slytherin -->
+    <section class="section panel">
+        <header class="section-head">
+            <h3>Slytherin</h3>
+            <!--   TODO: Number of wizards in this house   -->
+            <span class="count-badge house-slytherin">99</span>
+        </header>
+        <div class="cards wiz-cards">
+            <!-- TODO: loop through every wizard in this house -->
+            <article class="spell-card wiz-card">
+                <div class="media">
+                    <!-- TODO: wizard's avatar url -->
+                    <img src="/images/default-avatar.png">
+                    <div class="pills">
+                        <!-- TODO: wizard's alignment (if) -->
+                        <span class="pill pill-align-light">Light</span>
+                        <!--<span class="pill pill-align-dark">Dark</span>-->
+                    </div>
+                </div>
+                <div class="body">
+                    <h4 class="spell-name">Wanda</h4> <!-- TODO: wizard's username -->
+                    <div class="meta">
+                        <!-- TODO: wizard's spell count -->
+                        <span class="meta-item">Spells <strong>5</strong></span>
+                        <!-- TODO: wizard's spells power sum (sum the power of every spell this user has learned) -->
+                        <span class="meta-item">Power <strong>312</strong></span>
+                    </div>
+                </div>
+            </article>
+            <!-- TODO: Display this when there are no wizards in this house -->
+            <!--<p class="empty muted">No students yet.</p>-->
+        </div>
+    </section>
+
+    <!-- Ravenclaw -->
+    <section class="section panel">
+        <header class="section-head">
+            <h3>Ravenclaw</h3>
+            <!--   TODO: Number of wizards in this house   -->
+            <span class="count-badge house-ravenclaw">99</span>
+        </header>
+        <div class="cards wiz-cards">
+            <!-- TODO: loop through every wizard in this house -->
+            <article class="spell-card wiz-card">
+                <div class="media">
+                    <!-- TODO: wizard's avatar url -->
+                    <img src="/images/default-avatar.png">
+                    <div class="pills">
+                        <!-- TODO: wizard's alignment (if) -->
+                        <span class="pill pill-align-light">Light</span>
+                        <!--<span class="pill pill-align-dark">Dark</span>-->
+                    </div>
+                </div>
+                <div class="body">
+                    <h4 class="spell-name">Wanda</h4> <!-- TODO: wizard's username -->
+                    <div class="meta">
+                        <!-- TODO: wizard's spell count -->
+                        <span class="meta-item">Spells <strong>5</strong></span>
+                        <!-- TODO: wizard's spells power sum (sum the power of every spell this user has learned) -->
+                        <span class="meta-item">Power <strong>312</strong></span>
+                    </div>
+                </div>
+            </article>
+            <!-- TODO: Display this when there are no wizards in this house -->
+            <!--<p class="empty muted">No students yet.</p>-->
+        </div>
+    </section>
+
+    <!-- Hufflepuff -->
+    <section class="section panel">
+        <header class="section-head">
+            <h3>Hufflepuff</h3>
+            <!--   TODO: Number of wizards in this house    -->
+            <span class="count-badge house-hufflepuff">99</span>
+        </header>
+        <div class="cards wiz-cards">
+            <!-- TODO: loop through every wizard in this house -->
+            <article class="spell-card wiz-card">
+                <div class="media">
+                    <!-- TODO: wizard's avatar url -->
+                    <img src="/images/default-avatar.png">
+                    <div class="pills">
+                        <!-- TODO: wizard's alignment (if) -->
+                        <span class="pill pill-align-light">Light</span>
+                        <!--<span class="pill pill-align-dark">Dark</span>-->
+                    </div>
+                </div>
+                <div class="body">
+                    <h4 class="spell-name">Wanda</h4> <!-- TODO: wizard's username -->
+                    <div class="meta">
+                        <!-- TODO: wizard's spell count -->
+                        <span class="meta-item">Spells <strong>5</strong></span>
+                        <!-- TODO: wizard's spells power sum (sum the power of every spell this user has learned) -->
+                        <span class="meta-item">Power <strong>312</strong></span>
+                    </div>
+                </div>
+            </article>
+            <!-- TODO: Display this when there are no wizards in this house -->
+            <!--<p class="empty muted">No students yet.</p>-->
+        </div>
+    </section>
+</main>
+</body>
+</html>

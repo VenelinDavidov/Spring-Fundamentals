@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/auth-overlay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="auth-page">
+<th:block th:insert="~{/fragments/index-fragments :: corner-veil}"></th:block>
+<th:block th:insert="~{/fragments/index-fragments :: particles}"></th:block>
+<div class="auth-blur"></div>
+
+<main class="auth-modal register">
+
+    <a class="auth-close" href="/" aria-label="Back to home">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+
+    <h1 class="auth-title">Register</h1>
+
+    <!-- TODO: Add correct form action, method and binding object here-->
+    <form class="auth-form" th:action="@{/register}" method="post" th:object="${registerRequest}">
+
+
+    <div class="form-group">
+            <label for="reg-username">
+                <span>Username</span>
+                <!-- TODO: show the element "invalid username" only if username field has errors -->
+                <span th:if="${#fields.hasErrors('username')}" th:errors="*{username}" class="badge badge-error">invalid username</span>
+            </label>
+            <!-- TODO: bind the below input element with the DTO field -->
+            <input th:field="*{username}" class="form-control" id="reg-username" type="text" placeholder="Enter your username" required>
+        </div>
+
+        <div class="form-group">
+            <label for="reg-password">
+                <span>Password</span>
+                <!-- TODO: show the element "invalid password" only if password field has errors -->
+                <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}" class="badge badge-error">invalid password</span>
+            </label>
+            <div class="password-wrap">
+                <!-- TODO: bind the below input element with the DTO field -->
+                <input th:field="*{password}" class="form-control" id="reg-password" type="password" placeholder="Enter your password">
+                <i class="fa-solid fa-eye toggle-password" onclick="togglePasswordReg()" id="toggleIconReg" aria-label="Show password"></i>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="avatarUrl" class="label-with-badge">
+                <span>Avatar URL</span>
+                <!-- TODO: show the element "invalid url" only if avatar url field has errors -->
+                <span th:if="${#fields.hasErrors('avatarUrl')}" th:errors="*{avatarUrl}" class="badge badge-error">invalid url</span>
+            </label>
+            <!-- TODO: bind the below input element with the DTO field -->
+            <input th:field="*{avatarUrl}" class="form-control" id="avatarUrl" type="url" placeholder="Paste image URL">
+        </div>
+
+        <div  class="form-group">
+            <label for="house" class="label-with-badge">
+                <span>House</span>
+                <!-- TODO: show the element "not null" only if house field has errors -->
+                <span th:if="${#fields.hasErrors('house')}" th:errors="*{house}" class="badge badge-error">not null</span>
+                <span  class="badge badge-soft">choose wisely</span>
+            </label>
+            <!-- TODO: bind the below select element with the DTO field, iterating over the allowed options-->
+            <select th:field="*{house}" class="form-select" id="house" required>
+                <option value="">Select your house</option>
+                <option th:each="house : ${T(main.model.House).values()}" th:value="${house}" th:text="${house.name()}">Gryffindor</option>
+
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="path" class="label-with-badge">
+                <span>Alignment</span>
+                <!-- TODO: show the element "not null" only if alignment field has errors -->
+                <span th:if="${#fields.hasErrors('alignment')}" th:errors="*{alignment}" class="badge badge-error">not null</span>
+                <span  class="badge badge-soft">light or dark wizard</span>
+            </label>
+            <!-- TODO: bind the below select element with the DTO field, iterating over the allowed options-->
+            <select  th:field="*{alignment}"   class="form-select" id="path" required>
+                <option value="">Choose your path</option>
+                <option th:each="alignment : ${T(main.model.WizardAlignment).values()}"  th:value="${alignment}" th:text="${alignment.name()}">Light</option>
+
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary full">Create Account</button>
+        <p class="switch-line">Already have an account? <a href="/login">Log In</a></p>
+    </form>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+    <p>© 2025 Wizarding Arena — SoftUni Exam — Spring Fundamentals</p>
+</footer>
+<script>
+    function togglePasswordReg() {
+      const input = document.getElementById("reg-password");
+      const icon  = document.getElementById("toggleIconReg");
+      if (input.type === "password") {
+        input.type = "text";  icon.classList.replace("fa-eye","fa-eye-slash");
+        icon.setAttribute('aria-label','Hide password');
+      } else {
+        input.type = "password"; icon.classList.replace("fa-eye-slash","fa-eye");
+        icon.setAttribute('aria-label','Show password');
+      }
+    }
+    function previewAvatar(url){
+      const box = document.getElementById('avatarPreview');
+      if(!box) return;
+      box.innerHTML = url ? `<img src="${url}" alt="Avatar preview">` : "";
+    }
+</script>
+</body>
+</html>
